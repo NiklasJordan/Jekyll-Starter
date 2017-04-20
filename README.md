@@ -1,8 +1,8 @@
-# Boilerplate for Jekyll Sites
+# Starter Theme for Jekyll Sites
 
 ## What is it?
 
-This is my personal project-boilerplate.
+This is my personal project starter theme for Jekyll.
 
 I wouldn't recommend to use it as it is for your project. It's not documented.
 It's just a collection of files, that i use in almost every Jekyll project.
