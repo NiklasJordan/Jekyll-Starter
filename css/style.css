@@ -1,0 +1,92 @@
+/* Setup */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links, Buttons & Markierungen */
+a {
+  color: #1E90FF;
+  padding: 2px;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #0876cb;
+}
+
+a:focus {
+  background-color: #FFCE54;
+}
+
+mark {
+  background: #fffacb;
+}
+
+/* Accessibility: Skip link */
+#skiplink-container a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skiplink-container a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+/* Mehrspaltigkeit */
+div.container {
+  width: 100%;
+  padding: 0px 80px 0px 0px;
+  display:-webkit-flex;
+	display:flex;
+}
+
+div.spalte {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+div.abstand {
+  margin-right: 100px;
+}
+
+/* Smartphone */
+@media screen and (max-width:900px) {
+  html {
+    border: none;
+  }
+  div.container {
+    -webkit-flex-direction: column;
+	  flex-direction: column;
+    padding: 0px;
+  }
+  div.abstand {
+    margin-right: 0px;
+  }
+}
+
+/* Print-Layout */
+@media print {
+  div.container {
+    -webkit-flex-direction: column;
+	  flex-direction: column;
+    padding: 0px;
+  }
+  div.abstand {
+    margin-right: 0px;
+  }
+}

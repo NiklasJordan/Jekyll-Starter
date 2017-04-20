@@ -1,0 +1,36 @@
+---
+title: Niklas Jordan
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/writing/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+Site-Name: Boilerplate of Niklas Jordan
+MetaDescription: This is the personal project boilerplate of Niklas Jordan.
+Twitter: "@niklas_jordan"
+GooglePlus: https://plus.google.com/u/0/104211211117831167754
+navigation:
+- title: Home
+  url: "/"
+- title: Test
+  url: "/"
+- title: test 2
+  url: "/"
+gems:
+- jemoji
+markdown: kramdown

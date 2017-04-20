@@ -1,0 +1,26 @@
+---
+layout: writing
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% include tag-manager.html %}
+
+    {% include navigation.html %}
+
+    {{ content }}
+
+    <ul>
+    {% for mypost in site.posts %}
+      <li><a href="{{ mypost.url | prepend: site.baseurl }}">{{ mypost.title }}</a> <span class="label">{{ mypost.categories }}</span></li>
+    {% endfor %}
+    </ul>
+
+  {% include footer.html %}
+  </body>
+</html>

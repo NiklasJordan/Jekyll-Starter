@@ -1,0 +1,26 @@
+---
+layout: Default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% include tag-manager.html %}
+
+    {% include navigation.html %}
+
+    {{ content }}
+
+    <ul class="half">
+    {% for mypost in site.posts limit:4 %}
+      <li><a href="{{ mypost.url | prepend: site.baseurl }}">{{ mypost.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+    {% include footer.html %}
+  </body>
+</html>
